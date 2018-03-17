@@ -1,0 +1,19 @@
+{
+  "name": "showbar",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yuraKolodiy13"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.0"
+  }
+}

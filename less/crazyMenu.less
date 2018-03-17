@@ -1,0 +1,50 @@
+.crazyMenu{
+  background: url("../img/crazyMenu-bg.jpg") no-repeat center;
+  height: 775px;
+  padding: 50px 0;
+}
+.crazyMenu img{
+  max-width: 100%;
+  height: auto;
+}
+.crazyMenu .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  background-color: rgba(0, 0, 0, .5);
+}
+.crazyMenu__img{
+  position: relative;
+  overflow: hidden;
+}
+.crazyMenu__img:hover .overlay{
+  transform: translateX(0);
+  transition: .5s;
+}
+.crazyMenu__belt{
+  background: url(../img/belt.png) no-repeat;
+  height: 180px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'PTSerif', Arial, sans-serif;
+  font-size: 23px;
+  line-height: 25px;
+}
+.crazyMenu__title{
+  text-align: center;
+  font-size: 60px;
+  color: #ffffff;
+  letter-spacing: .05em;
+  font-weight: bold;
+  margin: 0 auto 50px;
+}
