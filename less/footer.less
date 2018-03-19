@@ -1,0 +1,46 @@
+.footer{
+  background: url("../img/footer-bg.jpg") no-repeat;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+}
+.map {
+  height:520px;
+  position: relative;
+  transform: translateY(100%);
+  transition: .5s;
+}
+.form{
+  background-color: #000;
+  padding: 50px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  text-align: center;
+}
+.form::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 48%;
+}
+.form__callback{
+  width: 40%;
+}
+.form__callback input,
+.form__callback textarea{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid red;
+}
+.form__contacts{
+  width: 50%;
+}
+
