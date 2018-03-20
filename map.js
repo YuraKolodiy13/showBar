@@ -31,7 +31,7 @@ locations.forEach( function( element ) {
     });
 });
 
-var footer = document.querySelector('.footer');
+var footer = document.querySelector('.footer__map');
 var map = document.querySelector('.map');
 
 footer.addEventListener('mouseover', function () {

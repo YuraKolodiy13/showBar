@@ -42,7 +42,6 @@
   align-items: center;
   justify-content: center;
   height: 105px;
-  border-bottom: 4px solid transparent;
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
@@ -52,9 +51,9 @@
 .header .btnn:hover{
   color: #000000;
   transition: color .5s;
+  transform: scale(-1, 1);
   text-decoration: none;
 }
-.header .btnn:active{
-  border-top: none;
-  border-top: 4px solid transparent;
+.header .btnn:hover span{
+  transform: scale(-1, 1);
 }
