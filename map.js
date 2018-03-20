@@ -40,3 +40,22 @@ footer.addEventListener('mouseover', function () {
 footer.addEventListener('mouseout', function () {
     map.style.transform = ''
 });
+
+var videoImg = document.querySelector('.video__img');
+var videoMovie = document.querySelector('.video__movie');
+var video = document.querySelector('.video__movie video');
+
+videoImg.addEventListener('click', function () {
+    this.style.display = 'none';
+    videoMovie.style.display = 'block';
+    video.play();
+});
+// videoMovie.addEventListener('click', function() {
+//     video.play();
+// });
+
+videoMovie.addEventListener('click', function (e) {
+    videoImg.style.display = 'block';
+    video.pause();
+    videoMovie.style.display = 'none';
+});
