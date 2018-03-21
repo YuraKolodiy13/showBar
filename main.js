@@ -1,3 +1,4 @@
+//map
 var latlng = new google.maps.LatLng("49.8477176", "24.0280952");
 var myOptions = {
     zoom: 17,
@@ -32,15 +33,16 @@ locations.forEach( function( element ) {
 });
 
 var footer = document.querySelector('.footer__map');
-var map = document.querySelector('.map');
+var maps = document.querySelector('.map');
 
 footer.addEventListener('mouseover', function () {
-    map.style.transform = 'translateY(0)';
+    maps.style.transform = 'translateY(0)';
 });
 footer.addEventListener('mouseout', function () {
-    map.style.transform = ''
+    maps.style.transform = ''
 });
 
+//video
 var videoImg = document.querySelector('.video__img');
 var img = document.querySelector('.video__img img');
 var videoMovie = document.querySelector('.video__movie');
@@ -55,7 +57,7 @@ videoImg.addEventListener('click', function () {
     video.play();
 });
 
-videoMovie.addEventListener('click', function (e) {
+videoMovie.addEventListener('click', function () {
     videoImg.style.display = 'block';
     video.pause();
     videoMovie.style.display = 'none';
