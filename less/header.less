@@ -10,9 +10,12 @@
   max-width: 100%;
   height: auto;
 }
+.header__wrapper{
+  position: relative;
+}
 .header__logo{
   position: absolute;
-  left: 20px;
+  left: -50px;
   top: 20px;
 }
 .header__title{
@@ -56,4 +59,112 @@
 }
 .header .btnn:hover span{
   transform: scale(-1, 1);
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .header__logo{
+    left: 10px;
+    width: 100px;
+  }
+  .header__banner{
+    text-align: center;
+    margin-top: -20px;
+    padding: 0;
+  }
+  .header__banner img{
+    max-width: 50%;
+    height: auto;
+  }
+  .header .btnn{
+    width: 220px;
+    background-size: contain;
+    margin-left: auto;
+  }
+  .header .btnn--visky{
+    margin: auto;
+  }
+  .header__title{
+    margin-top: -20px;
+    padding: 0;
+  }
+  .header h1{
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .header h1 .md{
+    font-size: 60px;
+    line-height: 75px;
+    display: block;
+  }
+  .header h1 .lg{
+    font-size: 70px;
+    line-height: 90px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .header__logo{
+    left: 10px;
+    width: 100px;
+  }
+  .header__banner{
+    text-align: center;
+    margin-top: -20px;
+    padding: 0;
+  }
+  .header__banner img{
+    max-width: 80%;
+    height: auto;
+  }
+  .header .btnn{
+    width: 240px;
+    background-size: contain;
+    margin-left: auto;
+  }
+  .header h1{
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .header h1 .md{
+    font-size: 60px;
+    line-height: 75px;
+    display: block;
+  }
+  .header h1 .lg{
+    font-size: 70px;
+    line-height: 90px;
+    display: block;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .header__banner{
+    text-align: center;
+    margin-top: -20px;
+    padding: 0;
+    position: relative;
+    left: 30px;
+  }
+  .header__banner img{
+    max-width: 90%;
+    height: auto;
+  }
+  .header h1{
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .header h1 .md{
+    font-size: 80px;
+    line-height: 95px;
+    display: block;
+  }
+  .header h1 .lg{
+    font-size: 100px;
+    line-height: 110px;
+    display: block;
+  }
 }
